@@ -1,0 +1,14 @@
+main {
+  grid-area: main;
+  margin-bottom: calc(15px + (30 - 15) * var(--responsive-width-factor));
+  padding: 0 2.5rem;
+}
+
+main > h1 {
+  margin-top: calc(1em * 1.275);
+  margin-bottom: calc(1em * 1.275);
+  color: var(--primary-color);
+  font-weight: inherit;
+  font-size: calc(4.5rem + (6 - 4.5) * var(--responsive-width-factor));
+  text-align: center;
+}

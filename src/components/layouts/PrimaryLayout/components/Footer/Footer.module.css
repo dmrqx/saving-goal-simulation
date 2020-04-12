@@ -1,0 +1,23 @@
+.site-footer__primary {
+  grid-area: footer;
+  padding: 2.25rem 4.25rem;
+  text-align: right;
+}
+
+.repository-link {
+  color: var(--grayscale-500);
+  font-size: 0.65em;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.repository-link:hover {
+  color: var(--grayscale-700);
+}
+
+.github-mark {
+  display: inline-block;
+  width: 20px;
+  vertical-align: sub;
+}

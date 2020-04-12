@@ -52,7 +52,9 @@
     "prettier-standard": "^16.2.1",
     "standardx": "^5.0.0",
     "stylelint": "^13.2.1",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0"
   },
   "dependencies": {
     "babel-plugin-react-css-modules": "^5.2.6",

@@ -1,5 +1,6 @@
 module.exports = {
-  extends: 'stylelint-config-standard',
+  extends: ['stylelint-config-standard'],
+  plugins: ['stylelint-order', 'stylelint-config-rational-order/plugin'],
   rules: {
     'at-rule-no-unknown': [
       true,
@@ -19,6 +20,8 @@ module.exports = {
         ignorePseudoClasses: ['global', 'local']
       }
     ],
+    'order/properties-order': [],
+    'plugin/rational-order': true,
     'at-rule-no-vendor-prefix': true,
     'media-feature-name-no-vendor-prefix': true,
     'property-no-vendor-prefix': true,

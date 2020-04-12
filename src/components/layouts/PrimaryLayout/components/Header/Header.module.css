@@ -1,0 +1,12 @@
+.site-header__primary {
+  --box-padding: 5rem;
+
+  grid-area: header;
+  padding: var(--box-padding) calc(var(--box-padding) * 1.3) calc(var(--box-padding) * 0.7);
+  background-color: var(--grayscale-100);
+}
+
+.origin-logo {
+  display: block;
+  width: calc(65px + (80 - 65) * var(--responsive-width-factor));
+}

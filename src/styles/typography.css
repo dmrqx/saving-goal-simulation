@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap');
 
 @font-face {
+  font-weight: 300;
   font-family: system;
   font-style: normal;
-  font-weight: 300;
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
@@ -17,9 +17,9 @@
 }
 
 html {
-  font-family: var(--default-font-stack);
-  font-size: var(--rem-size);
   font-weight: var(--font-weight__regular);
+  font-size: var(--rem-size);
+  font-family: var(--default-font-stack);
 }
 
 body {
