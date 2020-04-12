@@ -1,0 +1,14 @@
+:root {
+  --primary-color: #1b31a8;
+  --accent-color: #0079ff;
+  --grayscale-900: #1d1e1f;
+  --grayscale-700: #657786;
+  --grayscale-500: #96a4b0;
+  --grayscale-300: #e1e8ed;
+  --grayscale-200: #f4f8fa;
+  --grayscale-100: #fff;
+  --text-color: var(--grayscale-900);
+  --text-color__light: var(--grayscale-700);
+  --icons-color: var(--grayscale-700);
+  --main-bg-color: var(--grayscale-200);
+}

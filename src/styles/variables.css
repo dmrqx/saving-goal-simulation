@@ -1,0 +1,6 @@
+:root {
+  /* responsiveness factors */
+  --responsive-width-factor: ((var(--viewport-width-limit, 100vw) - var(--min-page-width__unit, 360px)) / (var(--max-page-width, 1280) - var(--min-page-width__value, 360)));
+  --responsive-font-size-factor: (var(--min-base-font-size__unit, 16px) + (var(--max-base-font-size, 18) - var(--min-base-font-size__value, 16)) * var(--responsive-width-factor));
+  --length-common-denominator: 4;
+}

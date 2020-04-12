@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap');
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+:root {
+  --default-font-stack: 'Work Sans', system, sans-serif;
+  --font-weight__regular: 400;
+  --font-weight__medium: 500;
+  --font-weight__bold: 600;
+  --rem-size: calc(var(--responsive-font-size-factor) / var(--length-common-denominator));
+  --base-font-size: calc(var(--rem-size) * var(--length-common-denominator));
+}
+
+html {
+  font-family: var(--default-font-stack);
+  font-size: var(--rem-size);
+  font-weight: var(--font-weight__regular);
+}
+
+body {
+  color: var(--text-color);
+  font-size: var(--base-font-size);
+}

@@ -1,3 +1,8 @@
+@import './styles/normalize.css';
+@import './styles/variables.css';
+@import './styles/colors.css';
+@import './styles/typography.css';
+
 body {
-  background-color: #f4f8fa;
+  background-color: var(--main-bg-color);
 }
