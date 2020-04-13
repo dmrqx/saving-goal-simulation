@@ -1,0 +1,7 @@
+.root {
+  --box-padding: 4rem;
+
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: calc(var(--box-padding) * 1.75) var(--box-padding) var(--box-padding);
+}

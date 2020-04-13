@@ -4,7 +4,8 @@ describe('index.js', () => {
   test('app renders without crashing', () => {
     require('./index')
 
-    const sceneTitle = screen.getByText(/saving goal/i)
-    expect(sceneTitle).toBeInTheDocument()
+    const sceneTitle = screen.queryAllByText(/saving goal/i)
+
+    expect(sceneTitle).not.toHaveLength(0)
   })
 })

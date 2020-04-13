@@ -1,0 +1,14 @@
+.simulation-header :global .icon {
+  width: calc(32px + (40 - 32) * var(--responsive-width-factor));
+  height: calc(32px + (40 - 32) * var(--responsive-width-factor));
+}
+
+.simulation-title {
+  margin-top: 0.3em;
+  margin-bottom: 0.2em;
+  font-size: calc(6rem + (8 - 6) * var(--responsive-width-factor));
+}
+
+.simulation-subtitle {
+  color: var(--grayscale-700);
+}
