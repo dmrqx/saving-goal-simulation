@@ -12,6 +12,9 @@ module.exports = {
     },
     'postcss-modules': {
       generateScopedName: '[local]___[sha1:hash:hex:8]'
+    },
+    'postcss-import-url': {
+      modernBrowser: true
     }
   }
 }

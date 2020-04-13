@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 
 import { PrimaryLayout } from '@origin/components/layouts'
+import { Box } from '@origin/components/ui'
 import './index.css'
 
 const pageTitle = (
@@ -12,7 +13,7 @@ const pageTitle = (
 
 const rootComponent = (
   <PrimaryLayout pageTitle={pageTitle}>
-    <div>Some content</div>
+    <Box tag='section'>Some content</Box>
   </PrimaryLayout>
 )
 const rootElement = document.getElementById('app')

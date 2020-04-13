@@ -47,6 +47,7 @@
     "jsdom": "^16.2.2",
     "parcel": "^2.0.0-nightly.207",
     "postcss-css-variables": "^0.14.0",
+    "postcss-import-url": "^5.1.0",
     "postcss-modules": "^1.5.0",
     "postcss-preset-env": "^6.7.0",
     "prettier-standard": "^16.2.1",

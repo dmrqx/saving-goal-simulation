@@ -1,0 +1,10 @@
+.box {
+  --border-width: 1px;
+  --border-color: var(--grayscale-300);
+  --box-shadow: 0 1px 4px rgba(150, 164, 176, 0.1);
+
+  background-color: var(--grayscale-100);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+}
