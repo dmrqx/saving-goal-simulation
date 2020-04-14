@@ -1,3 +1,7 @@
+.simulation-header {
+  margin-bottom: 16rem;
+}
+
 .simulation-header :global .icon {
   width: calc(32px + (40 - 32) * var(--responsive-width-factor));
   height: calc(32px + (40 - 32) * var(--responsive-width-factor));

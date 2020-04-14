@@ -13,10 +13,8 @@ export default function SavingGoalHeader ({ type, objective }) {
   return (
     <header styleName='simulation-header'>
       {type && <Icon name={type} />}
-      <legend>
-        <h2 styleName='simulation-title'>{objective}</h2>{' '}
-        <span styleName='simulation-subtitle'>Saving goal</span>
-      </legend>
+      <h2 styleName='simulation-title'>{objective}</h2>{' '}
+      <span styleName='simulation-subtitle'>Saving goal</span>
     </header>
   )
 }
