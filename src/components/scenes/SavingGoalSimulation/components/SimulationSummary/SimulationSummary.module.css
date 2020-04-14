@@ -1,0 +1,45 @@
+.simulation--summary {
+  margin: 2em 0 1.5em;
+}
+
+.simulation--summary .description {
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.35;
+}
+
+.simulation--summary .values {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.615em;
+  margin-bottom: 0.615em;
+  font-weight: 500;
+  font-size: 6.5rem;
+  line-height: 1;
+}
+
+.simulation--summary .values small {
+  font-size: 0.615em;
+}
+
+.box--content {
+  /* local styles */
+  --box-padding: 6rem;
+
+  padding: 0 var(--box-padding);
+}
+
+.box--footer {
+  padding: calc(var(--box-padding) / 1.5) var(--box-padding) calc(var(--box-padding) * 0.925);
+  background-color: var(--grayscale-200);
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+
+  /* local styles */
+  --box-padding: 6rem;
+}
+
+.text__highlighted {
+  color: var(--accent-color);
+}

@@ -1,7 +1,19 @@
 .root {
-  --box-padding: 4rem;
+  --box-padding: 6rem;
 
   max-width: 140rem;
   margin: 0 auto;
-  padding: calc(var(--box-padding) * 1.75) var(--box-padding) var(--box-padding);
+  padding: calc(var(--box-padding) * 1.25) var(--box-padding) var(--box-padding);
+}
+
+@media (min-width: 600px) {
+  .root form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .root form > div {
+    flex: 1 0 auto;
+    max-width: 62rem;
+  }
 }

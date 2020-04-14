@@ -1,10 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import { SavingGoalSimulation } from '@origin/components/scenes'
+import App from '@origin/components'
 import './index.css'
 
-const rootComponent = <SavingGoalSimulation />
+const rootComponent = <App />
 const rootElement = document.getElementById('app')
 
 render(rootComponent, rootElement)

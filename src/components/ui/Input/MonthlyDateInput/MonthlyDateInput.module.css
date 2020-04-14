@@ -1,0 +1,33 @@
+/* monthly date input styles */
+:global .form-control--monthly-date {
+  display: flex;
+}
+
+:global .form-control--monthly-date button {
+  width: 12rem;
+  background-color: var(--grayscale-300);
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+:global .form-control--monthly-date button:first-child svg {
+  transform: rotate(180deg);
+}
+
+:global .form-control--monthly-date div {
+  flex: 2 1 auto;
+  padding: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+
+:global .form-control--monthly-date .month {
+  margin: 0;
+  font-weight: var(--font-weight__bold);
+}
+
+:global .form-control--monthly-date .year {
+  margin: 0;
+  font-size: 70%;
+}

@@ -1,22 +1,55 @@
 import React from 'react'
+import { shape, string } from 'prop-types'
 
-import { PrimaryLayout } from '@origin/components/layouts'
-import { Box } from '@origin/components/ui'
-import { SavingGoalHeader } from './components'
+import { SavingGoalContext } from '@origin/components/contexts'
+import { Box, PrimaryButton } from '@origin/components/ui'
+import { useWithContextConsumer } from '@origin/hooks'
+import { SavingGoalHeader, SimulationSummary } from './components'
 import './SavingGoalSimulation.module.css'
 
-export default function SavingGoalSimulation () {
-  const pageTitle = (
-    <>
-      Let's plan your <strong>saving goal.</strong>
-    </>
-  )
+const propTypes = {
+  context: shape({
+    savingGoal: shape({
+      deposit: string.isRequired,
+      dueDate: string.isRequired,
+      objective: string.isRequired,
+      periodicity: string.isRequired,
+      summary: string.isRequired,
+      totalAmount: string.isRequired,
+      type: string.isRequired
+    }).isRequired
+  }).isRequired
+}
+
+function SavingGoalSimulation ({ context }) {
+  const { savingGoal, SceneLayout, SimulationForm } = context
+
+  function fromContext (keys) {
+    return Object.fromEntries(keys.map(key => [key, savingGoal[key]]))
+  }
 
   return (
-    <PrimaryLayout pageTitle={pageTitle}>
+    <SceneLayout>
       <Box tag='section' styleName='root'>
-        <SavingGoalHeader type='house' objective='Buy a house' />
+        <SavingGoalHeader {...fromContext(['type', 'objective'])} />
+        <SimulationForm />
+        <SimulationSummary
+          {...fromContext([
+            'deposit',
+            'dueDate',
+            'periodicity',
+            'summary',
+            'totalAmount'
+          ])}
+        />
+
+        <PrimaryButton />
       </Box>
-    </PrimaryLayout>
+    </SceneLayout>
   )
 }
+
+// eslint-disable-next-line react-hooks/rules-of-hooks
+export default useWithContextConsumer(SavingGoalSimulation, SavingGoalContext)
+
+SavingGoalSimulation.propTypes = propTypes
